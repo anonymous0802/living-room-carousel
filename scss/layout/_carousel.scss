@@ -1,0 +1,47 @@
+
+
+.grid-carousel {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid:  auto-flow / minmax(1em, 1fr) minmax(1em, 1fr) minmax(1em, 1fr) ;
+  align-items: center;
+  transform: translateY(30%);
+  &__item {
+    @include applyOrder(3);
+    transform: scale(0.8);
+    position: relative;
+    opacity: 0.6;
+    .grid-carousel__image {
+      width: 100%;
+    }
+  }
+  &__caption {
+    opacity: 0;
+  }
+  &__control {
+    grid-column: 3 / 4;
+    text-align: right;
+    font-size: 2em;
+    margin: 4em 0;
+    order: 99;
+    a {
+      padding: 0.5em 0.8em;
+      border-radius: 50%;
+      background-color: $clr-base;
+      color: #fff;
+    }
+    a:hover {
+      background-color: $clr-light;
+    }
+  }
+}
+
+.featuredItem {
+  transform: scale(1.8);
+  z-index: 100;
+  opacity: 1;
+  .grid-carousel__caption {
+    opacity: 1;
+  }
+}

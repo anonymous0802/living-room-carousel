@@ -1,0 +1,7 @@
+@mixin applyOrder($slides) {
+  @for $slide from 1 through $slides {
+    &:nth-of-type(#{$slide}) {
+      order: #{$slide};
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "abstracts/color";
+@import "abstracts/typography";
+@import "abstracts/mixins";
+
+@import "base/typography";
+
+@import "layout/carousel";
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #94c3947d;
+}

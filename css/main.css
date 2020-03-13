@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+body {
+  color: #091614;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lacquer";
+}
+
+body .grid-carousel .grid-carousel__item {
+  text-align: center;
+}
+
+body .grid-carousel .grid-carousel__item .grid-carousel__title {
+  color: #48545C;
+  font-weight: 400;
+  font-family: "Lacquer" !important;
+}
+
+body .grid-carousel .grid-carousel__item .grid-carousel__subtitle {
+  color: #5F6A70;
+  font-weight: 400;
+}
+
+body .grid-carousel .grid-carousel__item .grid-carousel__description {
+  color: #A3A9AD;
+  font-weight: 400;
+}
+
+.grid-carousel {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid: auto-flow/minmax(1em, 1fr) minmax(1em, 1fr) minmax(1em, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.grid-carousel__item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  position: relative;
+  opacity: 0.6;
+}
+
+.grid-carousel__item:nth-of-type(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.grid-carousel__item:nth-of-type(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.grid-carousel__item:nth-of-type(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.grid-carousel__item .grid-carousel__image {
+  width: 100%;
+}
+
+.grid-carousel__caption {
+  opacity: 0;
+}
+
+.grid-carousel__control {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  text-align: right;
+  font-size: 2em;
+  margin: 4em 0;
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+}
+
+.grid-carousel__control a {
+  padding: 0.5em 0.8em;
+  border-radius: 50%;
+  background-color: #5F6A70;
+  color: #fff;
+}
+
+.grid-carousel__control a:hover {
+  background-color: #A3A9AD;
+}
+
+.featuredItem {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  z-index: 100;
+  opacity: 1;
+}
+
+.featuredItem .grid-carousel__caption {
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #94c3947d;
+}
+/*# sourceMappingURL=main.css.map */
